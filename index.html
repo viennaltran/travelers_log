@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+</head>
+<body>
+    <div class="container">
+        <div class="row page-header">
+            <!-- only show this element when the isnt on mobile -->
+            <h1 class="col-lg-12 hidden-xs">Traveler's Log
+            </h1>
+            <!-- only show this element when the user gets to a mobile version -->
+            <h3 class="hidden-lg hidden-md hidden-sm col-xs-12">Traveler's Log
+            </h3>
+        </div>
+
+        <div class="student-add-form container pull-right col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            <h4>Add Place</h4>
+            <div class="input-group form-group">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-globe" ></span>
+                </span>
+                <input type="text" class="form-control" name="place" id="place" placeholder="Place Travel">
+            </div>
+            <button type="button" id="addButton" class="btn btn-primary"> Add</button>
+            <button type="button" id="cancelButton" class="btn btn-default">Cancel</button>
+
+        </div>
+
+        <div class="student-list-container container col-lg-9 col-md-8 col-sm-12 col-xs-12">
+            
+            <table class="student-list table table-striped col-lg-12">
+                <thead>
+                    <tr>
+                        Place:
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="col-lg-2 col-xs-1"> <div class="input-group form-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user" ></span>
+                                </span>
+                                <input type="text" class="form-control" name="date" id="date" placeholder="Date">
+                            </div>
+                        </th>
+                        <th class="col-lg-2 col-xs-1"> <div class="input-group form-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user" ></span>
+                                </span>
+                                <input type="text" class="form-control" name="category" id="category" placeholder="Category">
+                            </div>
+                        </th>
+                        <th class="col-lg-2 col-xs-1"> <div class="input-group form-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user" ></span>
+                                </span>
+                                <input type="text" class="form-control" name="description" id="description" placeholder="Description">
+                            </div>
+                        </th>
+                        <th class="col-lg-2 col-xs-1"> <div class="input-group form-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user" ></span>
+                                </span>
+                                <input type="text" class="form-control" name="amount" id="amount" placeholder="Amount">
+                            </div>
+                        </th>
+                        <th class="col-lg-2 col-xs-1">
+                        <button type="button" id="addButton" class="btn btn-primary"> Add </button>
+                        <button type="button" id="cancelButton" class="btn btn-default">Cancel</button>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
